@@ -51,15 +51,19 @@ export default function DemoChat({ title, systemPrompt, openingMessage, quickRep
         }),
       });
 
-      if (!response.ok) throw new Error("API error");
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({}));
+        throw new Error(errorData.error || "API error");
+      }
 
       const data = await response.json();
       setMessages((prev) => [...prev, { role: "assistant", content: data.reply }]);
     } catch (error) {
       console.error(error);
+      const errorMessage = error instanceof Error ? error.message : "Izvinite, trenutno imam tehničkih poteškoća.";
       setMessages((prev) => [
         ...prev,
-        { role: "assistant", content: "Izvinite, trenutno imam tehničkih poteškoća. Možete nas kontaktirati direktno na WhatsApp." },
+        { role: "assistant", content: `⚠️ GREŠKA: ${errorMessage}` },
       ]);
     } finally {
       setIsLoading(false);

@@ -2,6 +2,14 @@ import { NextResponse } from 'next/server';
 
 export async function POST(req: Request) {
   try {
+    if (!process.env.DEEPSEEK_API_KEY) {
+      console.error('CRITICAL: DEEPSEEK_API_KEY is missing from environment variables.');
+      return NextResponse.json(
+        { error: 'Server misconfiguration: API key is missing. Please add DEEPSEEK_API_KEY to your Vercel Environment Variables.' },
+        { status: 401 }
+      );
+    }
+
     const { messages, systemPrompt } = await req.json();
 
     if (!messages || !systemPrompt) {
