@@ -8,39 +8,39 @@ import { cn } from "@/lib/utils";
 
 const testimonials = [
   {
-    name: "Alex Rivera",
+    name: "Fitness Influencer",
     niche: "Fitness Coach",
     followers: "120k",
     platform: <InstagramIcon size={16} />,
-    quote: "NexOps literally changed my life. I went from praying for brand deals to making €5k a month from my own app. The team handled everything perfectly."
+    quote: "NexOps literally changed my life. I went from praying for brand deals to making $15k a month from my own app. The team handled everything perfectly."
   },
   {
-    name: "Sarah Jenkins",
+    name: "YouTube Chef",
     niche: "Food & Recipes",
     followers: "85k",
     platform: <YoutubeIcon size={16} />,
-    quote: "I had no idea how to build an app. They took my vision and made it reality in 4 weeks. My community loves it and the revenue is fully predictable now."
+    quote: "I had no idea how to build an app. They took my vision and made it reality in 4 weeks. My community loves it and the revenue is over $12k monthly now."
   },
   {
-    name: "Marcus Chen",
-    niche: "Tech Reviewer",
+    name: "Tech Reviewer",
+    niche: "Gadget Reviews",
     followers: "200k",
     platform: <YoutubeIcon size={16} />,
-    quote: "The tech stack they use is top-tier. My app is lightning fast, looks beautiful, and converts my YouTube viewers into paying members effortlessly."
+    quote: "The tech stack they use is top-tier. My app generates $18k+ in subscription revenue, converting my viewers into paying members effortlessly."
   },
   {
-    name: "Elena Rostova",
-    niche: "Fashion Creator",
+    name: "Fashion Creator",
+    niche: "Style & Beauty",
     followers: "55k",
     platform: <InstagramIcon size={16} />,
-    quote: "I thought I needed a million followers to have an app. NexOps showed me how to monetize my 55k audience. Best investment I've ever made."
+    quote: "I thought I needed a million followers. NexOps showed me how to monetize my 55k audience to reach $10k+ in monthly recurring revenue."
   },
   {
-    name: "David Kim",
+    name: "Music Educator",
     niche: "Guitar Lessons",
     followers: "92k",
     platform: <YoutubeIcon size={16} />,
-    quote: "Selling courses through my own app instead of a third-party platform means I keep the data, the brand control, and more of the money."
+    quote: "Selling courses through my own app instead of third-party platforms has boosted my monthly take-home pay to over $14k."
   }
 ];
 

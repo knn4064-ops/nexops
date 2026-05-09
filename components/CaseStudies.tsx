@@ -31,28 +31,28 @@ function AnimatedCounter({ from, to, duration, inView }: { from: number, to: num
 
 const cases = [
   {
-    handle: "@fitwithlara",
+    handle: "Fitness Creator",
     platform: <InstagramIcon size={18} />,
     followers: "45k",
-    revenue: 2400,
-    quote: "from her fitness app",
+    revenue: 14400,
+    quote: "Monthly fitness app revenue",
     color: "from-pink-500/20 to-purple-500/20"
   },
   {
-    handle: "@chefmarcotv",
+    handle: "Cooking Educator",
     platform: <YoutubeIcon size={18} />,
     followers: "89k",
-    revenue: 1800,
-    quote: "from recipe membership",
+    revenue: 18800,
+    quote: "Monthly recipe club revenue",
     color: "from-red-500/20 to-orange-500/20"
   },
   {
-    handle: "@stylebynikolina",
+    handle: "Fashion Stylist",
     // TikTok icon SVG placeholder
     platform: <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>,
     followers: "32k",
-    revenue: 3100,
-    quote: "from style community app",
+    revenue: 12100,
+    quote: "Monthly style community revenue",
     color: "from-cyan-500/20 to-blue-500/20"
   }
 ];
@@ -108,7 +108,7 @@ export default function CaseStudies() {
                       Monthly Revenue
                     </p>
                     <div className="text-5xl font-display font-extrabold text-accent mb-4 tracking-tighter">
-                      €<AnimatedCounter from={0} to={study.revenue} duration={2} inView={inView} />
+                      $<AnimatedCounter from={0} to={study.revenue} duration={2} inView={inView} />
                       <span className="text-xl text-white/40 font-sans tracking-normal font-medium">/mo</span>
                     </div>
                     <p className="text-lg text-white/80 font-medium">
