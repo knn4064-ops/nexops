@@ -7,36 +7,36 @@ import { cn } from "@/lib/utils";
 
 const faqs = [
   {
-    question: "Do I need any tech skills?",
-    answer: "No. None. Zero. We handle 100% of the design, development, deployment, and ongoing maintenance. You just focus on creating content and marketing to your audience."
+    question: "Do I need to know how to code?",
+    answer: "Not a single line. We handle the entire tech stack—design, development, launch, and maintenance. Your only job is doing what you do best: creating content and engaging your audience."
   },
   {
     question: "How long to build my app?",
     answer: "Typically under 2 weeks from our kickoff call to your app being live on the iOS App Store and Google Play Store. We move fast so you can start earning immediately."
   },
   {
-    question: "What if I'm under 10k followers?",
-    answer: "We work with creators who have 1k+ highly engaged followers. It's about engagement, not just sheer numbers. A loyal audience of 2,000 can generate significant revenue with the right app."
+    question: "What if I have less than 10k followers?",
+    answer: "We care about engagement, not vanity metrics. We regularly work with creators who have highly loyal audiences of 2,000 to 5,000 followers and turn that trust into serious, predictable revenue."
   },
   {
     question: "Which platforms do you support?",
     answer: "Our apps are native for iOS and Android. They integrate seamlessly with your existing platforms like Instagram, TikTok, YouTube, and X."
   },
   {
-    question: "How does the partnership model work?",
-    answer: "Your app, your brand. Model saradnje dogovaramo individualno na osnovu tvojih ciljeva i potencijala za rast. Naš cilj je da uskladimo naš uspeh sa tvojim."
+    question: "How does the partnership work?",
+    answer: "It's your app and your brand. We tailor the exact partnership model to fit your specific goals and audience size. Bottom line: our success is directly tied to yours."
   },
   {
     question: "What kind of app will I get?",
-    answer: "It depends on your niche! Fitness creators get workout and diet tracking apps. Food creators get recipe and meal planning apps. Educators get course and community apps. It's fully custom."
+    answer: "Whatever your audience actually wants to buy. Fitness creators get premium workout apps. Chefs get recipe clubs. Educators get private communities and courses. It's built from scratch for your niche."
   },
   {
     question: "Do you offer a strategy session?",
     answer: "Yes. Send us an email and we'll map out exactly what your app would look like and its revenue potential. No commitment required."
   },
   {
-    question: "How do I get started?",
-    answer: "Simply send an email to andrijana@nexops.agency. We'll discuss your brand, your audience, and show you exactly how we can turn them into a predictable revenue stream."
+    question: "How do we kick this off?",
+    answer: "Shoot an email to andrijana@nexops.agency. We'll look at your brand, your audience, and give you a realistic breakdown of your revenue potential."
   }
 ];
 

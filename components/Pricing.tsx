@@ -39,7 +39,7 @@ export default function Pricing() {
             transition={{ delay: 0.1 }}
             className="text-lg text-white/60"
           >
-            We don&apos;t just build apps; we build revenue machines. We tailor every partnership to your specific brand and goals.
+            We don&apos;t just hand you an app and wish you luck. We build a predictable business around your brand.
           </motion.p>
         </div>
 

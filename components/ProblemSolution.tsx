@@ -4,15 +4,15 @@ import { motion } from "framer-motion";
 import { XCircle, CheckCircle2, ArrowRight } from "lucide-react";
 
 const problems = [
-  "Relying on sponsorships that dry up",
-  "No real asset that works while you sleep",
-  "No idea where to start with tech"
+  "Chasing brand deals that dry up overnight",
+  "Trading time for money with zero passive income",
+  "Overwhelmed by the technical side of building an app"
 ];
 
 const solutions = [
-  "Predictable monthly revenue from your own app",
-  "A digital product your audience pays for daily",
-  "We handle 100% of tech. You just show up."
+  "Consistent, predictable monthly revenue from your own app",
+  "A scalable digital asset that makes you money while you sleep",
+  "We handle 100% of the tech. You just keep creating."
 ];
 
 const containerVariants = {

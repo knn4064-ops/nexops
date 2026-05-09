@@ -5,7 +5,7 @@ import { ChevronDown } from "lucide-react";
 import { InstagramIcon, YoutubeIcon } from "./icons";
 import { useEffect, useState } from "react";
 
-const words = "Turn Your Audience Into a Revenue Machine".split(" ");
+const words = "Stop Renting Your Audience. Start Owning It.".split(" ");
 
 export default function Hero() {
   const [count, setCount] = useState(0);
@@ -67,8 +67,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.8 }}
             className="text-lg md:text-xl text-white/70 max-w-2xl mb-10 leading-relaxed"
           >
-            We build and monetize custom apps for Instagram, TikTok & YouTube creators. 
-            You grow your brand — we handle the tech and the money.
+            We build premium, custom apps for creators. You focus on making content and growing your brand — we handle all the tech, deployment, and monetization.
           </motion.p>
 
 

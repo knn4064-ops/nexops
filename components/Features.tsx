@@ -6,33 +6,33 @@ import { Smartphone, Wallet, BarChart3, Link2, Rocket, ShieldCheck } from "lucid
 const features = [
   {
     icon: <Smartphone className="text-primary" size={32} />,
-    title: "Custom Branded App",
-    description: "Fully custom iOS & Android apps that match your exact brand aesthetic."
+    title: "100% Custom App",
+    description: "No cookie-cutter templates. We build native iOS and Android apps that look and feel exactly like your brand."
   },
   {
     icon: <Wallet className="text-accent" size={32} />,
-    title: "Built-in Monetization",
-    description: "Sell subscriptions, courses, communities, and exclusive premium content."
+    title: "Built to Sell",
+    description: "Subscriptions, one-off courses, private communities, and exclusive content. All built-in."
   },
   {
     icon: <BarChart3 className="text-secondary" size={32} />,
-    title: "Creator Dashboard",
-    description: "Track earnings, user growth, and deep analytics in one simple dashboard."
+    title: "Your Dashboard",
+    description: "Track every dollar, every new user, and every churned subscriber in one simple interface."
   },
   {
     icon: <Link2 className="text-pink" size={32} />,
-    title: "All Platforms Connected",
-    description: "Seamless integrations with Instagram, TikTok, YouTube, and your existing tools."
+    title: "Plays Nice with Others",
+    description: "We connect your new app directly to your Instagram, TikTok, YouTube, and email lists."
   },
   {
     icon: <Rocket className="text-primary" size={32} />,
-    title: "Launch Strategy Included",
-    description: "We don't just build it. We give you the exact playbook to market it to your audience."
+    title: "The Launch Playbook",
+    description: "We don't just hand you an app. We give you the exact marketing blueprint to actually sell it to your audience."
   },
   {
     icon: <ShieldCheck className="text-green-400" size={32} />,
-    title: "Ongoing Support & Updates",
-    description: "We handle bug fixes, iOS/Android updates, and server maintenance."
+    title: "We Handle the Headaches",
+    description: "Apple updates? Android bugs? Server crashes? Not your problem. We handle all ongoing maintenance."
   }
 ];
 

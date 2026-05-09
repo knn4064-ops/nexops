@@ -6,21 +6,21 @@ import { Mail, Code2, Rocket } from "lucide-react";
 const steps = [
   {
     icon: <Mail size={28} />,
-    title: "Email Outreach",
-    description: "Send us an email to map out your custom app strategy and revenue potential.",
-    tag: "Get a custom plan"
+    title: "The Partnership Email",
+    description: "Send us a quick email. We'll map out the exact app structure and revenue potential for your specific audience.",
+    tag: "No commitment"
   },
   {
     icon: <Code2 size={28} />,
-    title: "We Build Your App",
-    description: "Our team designs and develops a fully branded, premium app for iOS and Android.",
+    title: "We Build Everything",
+    description: "You don't lift a finger. We design, code, and deploy a premium iOS and Android app that matches your brand.",
     tag: "Under 2 Weeks"
   },
   {
     icon: <Rocket size={28} />,
-    title: "Launch & Monetize",
-    description: "Go live to your audience with subscriptions, one-time purchases, or exclusive content.",
-    tag: "Immediate ROI"
+    title: "Launch & Profit",
+    description: "Go live. Your audience buys subscriptions, courses, or exclusive content directly from your own platform.",
+    tag: "Start Earning"
   }
 ];
 
