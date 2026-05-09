@@ -9,7 +9,7 @@ const plans = [
   {
     name: "Launchpad",
     description: "For creators ready to start monetizing their audience.",
-    price: { monthly: "499", annual: "399" },
+    price: "Custom",
     features: [
       "Custom Branded App (iOS/Android)",
       "Standard UI Templates",
@@ -22,7 +22,7 @@ const plans = [
   {
     name: "Creator Pro",
     description: "For serious monetization and growing communities.",
-    price: { monthly: "999", annual: "799" },
+    price: "Custom",
     features: [
       "Everything in Launchpad",
       "Custom UI & Animations",
@@ -37,7 +37,7 @@ const plans = [
   {
     name: "Agency Partner",
     description: "Full white-glove service for massive audiences.",
-    price: { monthly: "Custom", annual: "Custom" },
+    price: "Custom",
     features: [
       "Everything in Creator Pro",
       "Unlimited Active Users",
@@ -51,8 +51,6 @@ const plans = [
 ];
 
 export default function Pricing() {
-  const [isAnnual, setIsAnnual] = useState(true);
-
   return (
     <section id="pricing" className="py-24 md:py-32 relative">
       <div className="container mx-auto px-4 md:px-6">
@@ -63,7 +61,7 @@ export default function Pricing() {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6"
           >
-            Simple, Transparent <span className="text-gradient">Pricing</span>
+            Flexible <span className="text-gradient">Pricing</span>
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -72,47 +70,8 @@ export default function Pricing() {
             transition={{ delay: 0.1 }}
             className="text-lg text-white/60"
           >
-            No hidden fees. No surprises. Just results.
+            Every creator is unique. We tailor our pricing to your brand, audience size, and revenue goals.
           </motion.p>
-        </div>
-
-        {/* Toggle */}
-        <div className="flex justify-center mb-16">
-          <div className="glass-card p-1.5 rounded-full flex items-center relative">
-            <button
-              onClick={() => setIsAnnual(false)}
-              className={cn(
-                "relative z-10 px-8 py-3 rounded-full font-medium transition-colors duration-300",
-                !isAnnual ? "text-white" : "text-white/50 hover:text-white/80"
-              )}
-            >
-              Monthly
-            </button>
-            <button
-              onClick={() => setIsAnnual(true)}
-              className={cn(
-                "relative z-10 px-8 py-3 rounded-full font-medium transition-colors duration-300 flex items-center gap-2",
-                isAnnual ? "text-white" : "text-white/50 hover:text-white/80"
-              )}
-            >
-              Annual
-              <span className="text-xs bg-accent/20 text-accent px-2 py-1 rounded-full border border-accent/20">
-                Save 20%
-              </span>
-            </button>
-            
-            {/* Animated Pill Background */}
-            <motion.div
-              layout
-              transition={{ type: "spring", stiffness: 500, damping: 30 }}
-              className="absolute top-1.5 bottom-1.5 bg-white/10 rounded-full"
-              initial={false}
-              animate={{
-                left: isAnnual ? "50%" : "0.375rem",
-                width: isAnnual ? "calc(50% - 0.375rem)" : "calc(50% - 0.375rem)"
-              }}
-            />
-          </div>
         </div>
 
         {/* Pricing Cards */}
@@ -139,34 +98,26 @@ export default function Pricing() {
               <p className="text-white/60 text-sm mb-8 h-10">{plan.description}</p>
 
               <div className="mb-8">
-                {plan.price.monthly === "Custom" ? (
-                  <div className="text-5xl font-display font-extrabold text-white">
-                    Custom
-                  </div>
-                ) : (
-                  <div className="flex items-end gap-2">
-                    <span className="text-5xl font-display font-extrabold text-white">
-                      €{isAnnual ? plan.price.annual : plan.price.monthly}
-                    </span>
-                    <span className="text-white/40 mb-1">/mo</span>
-                  </div>
-                )}
-                {isAnnual && plan.price.monthly !== "Custom" && (
-                  <div className="text-sm text-accent mt-2 font-medium">
-                    Billed annually
-                  </div>
-                )}
+                <div className="text-5xl font-display font-extrabold text-white">
+                  Custom
+                </div>
+                <div className="text-sm text-white/40 mt-2 font-medium">
+                  Tailored to your needs
+                </div>
               </div>
 
-              <button className={cn(
-                "w-full py-4 rounded-full font-bold transition-all duration-200 mb-8 flex items-center justify-center gap-2 group",
-                plan.popular 
-                  ? "bg-white text-background hover:scale-[1.02] hover:shadow-xl" 
-                  : "bg-white/5 border border-white/10 hover:bg-white/10 text-white"
-              )}>
-                {plan.price.monthly === "Custom" ? "Contact Us" : "Start Your App"}
+              <a 
+                href="mailto:andrijana@nexops.agency"
+                className={cn(
+                  "w-full py-4 rounded-full font-bold transition-all duration-200 mb-8 flex items-center justify-center gap-2 group text-center",
+                  plan.popular 
+                    ? "bg-white text-background hover:scale-[1.02] hover:shadow-xl" 
+                    : "bg-white/5 border border-white/10 hover:bg-white/10 text-white"
+                )}
+              >
+                Get a Quote
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-              </button>
+              </a>
 
               <div className="space-y-4 mt-auto">
                 <p className="text-sm font-medium text-white/80 uppercase tracking-wider mb-4">What&apos;s included</p>
