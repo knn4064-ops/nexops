@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { Check, ArrowRight } from "lucide-react";
-import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 const plans = [
