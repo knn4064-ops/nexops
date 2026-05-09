@@ -2,52 +2,22 @@
 
 import { motion } from "framer-motion";
 import { Check, ArrowRight } from "lucide-react";
-import { cn } from "@/lib/utils";
 
-const plans = [
-  {
-    name: "Launchpad",
-    description: "For creators ready to start monetizing their audience.",
-    price: "Custom",
-    features: [
-      "Custom Branded App (iOS/Android)",
-      "Standard UI Templates",
-      "Up to 1,000 Active Users",
-      "1 Monetization Model",
-      "Email Support"
-    ],
-    popular: false
-  },
-  {
-    name: "Creator Pro",
-    description: "For serious monetization and growing communities.",
-    price: "Custom",
-    features: [
-      "Everything in Launchpad",
-      "Custom UI & Animations",
-      "Up to 10,000 Active Users",
-      "Unlimited Monetization Models",
-      "Creator Dashboard Analytics",
-      "Priority 24/7 Support",
-      "Launch Strategy Call"
-    ],
-    popular: true
-  },
-  {
-    name: "Agency Partner",
-    description: "Full white-glove service for massive audiences.",
-    price: "Custom",
-    features: [
-      "Everything in Creator Pro",
-      "Unlimited Active Users",
-      "Custom Feature Development",
-      "Dedicated App Manager",
-      "Revenue Optimization Strategy",
-      "Zero Revenue Share"
-    ],
-    popular: false
-  }
-];
+const plan = {
+  name: "The NexOps Partnership",
+  description: "A complete, high-performance ecosystem built exclusively for your brand and audience.",
+  price: "Custom",
+  features: [
+    "Custom Branded App (iOS & Android)",
+    "Premium UI Design & Smooth Animations",
+    "Unlimited Active Users & Scalability",
+    "Multi-Channel Monetization Systems",
+    "Advanced Creator Analytics Dashboard",
+    "Dedicated App & Growth Manager",
+    "Launch & Scaling Strategy Implementation",
+    "Priority Technical Support"
+  ]
+};
 
 export default function Pricing() {
   return (
@@ -60,7 +30,7 @@ export default function Pricing() {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6"
           >
-            Flexible <span className="text-gradient">Pricing</span>
+            Flexible <span className="text-gradient">Partnership</span>
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -69,68 +39,57 @@ export default function Pricing() {
             transition={{ delay: 0.1 }}
             className="text-lg text-white/60"
           >
-            Every creator is unique. We tailor our pricing to your brand, audience size, and revenue goals.
+            We don&apos;t just build apps; we build revenue machines. We tailor every partnership to your specific brand and goals.
           </motion.p>
         </div>
 
-        {/* Pricing Cards */}
-        <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {plans.map((plan, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className={cn(
-                "glass-card rounded-[2.5rem] p-8 flex flex-col relative",
-                plan.popular ? "border-primary/50 shadow-[0_0_30px_rgba(124,58,237,0.15)] md:-translate-y-4" : "border-white/10"
-              )}
-            >
-              {plan.popular && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-primary to-pink text-white text-sm font-bold px-4 py-1.5 rounded-full shadow-lg border border-white/20 z-10">
-                  Most Popular
-                </div>
-              )}
+        {/* Single Pricing Card */}
+        <div className="max-w-xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="glass-card rounded-[2.5rem] p-8 md:p-12 flex flex-col relative border-primary/30 shadow-[0_0_50px_rgba(124,58,237,0.1)]"
+          >
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-primary to-pink text-white text-sm font-bold px-6 py-2 rounded-full shadow-lg border border-white/20 z-10 uppercase tracking-widest">
+              Limited Slots Available
+            </div>
 
-              <h3 className="text-2xl font-display font-bold mb-2">{plan.name}</h3>
-              <p className="text-white/60 text-sm mb-8 h-10">{plan.description}</p>
+            <h3 className="text-3xl md:text-4xl font-display font-bold mb-4 text-center">{plan.name}</h3>
+            <p className="text-white/60 text-center text-lg mb-10 leading-relaxed">{plan.description}</p>
 
-              <div className="mb-8">
-                <div className="text-5xl font-display font-extrabold text-white">
-                  Custom
-                </div>
-                <div className="text-sm text-white/40 mt-2 font-medium">
-                  Tailored to your needs
-                </div>
+            <div className="mb-10 text-center">
+              <div className="text-6xl font-display font-extrabold text-white mb-2">
+                Custom
               </div>
+              <div className="text-base text-white/40 font-medium">
+                Tailored Partnership Model
+              </div>
+            </div>
 
-              <a 
-                href="mailto:andrijana@nexops.agency"
-                className={cn(
-                  "w-full py-4 rounded-full font-bold transition-all duration-200 mb-8 flex items-center justify-center gap-2 group text-center",
-                  plan.popular 
-                    ? "bg-white text-background hover:scale-[1.02] hover:shadow-xl" 
-                    : "bg-white/5 border border-white/10 hover:bg-white/10 text-white"
-                )}
-              >
-                Get a Quote
-                <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-              </a>
+            <a 
+              href="mailto:andrijana@nexops.agency"
+              className="w-full py-5 rounded-full font-bold transition-all duration-300 mb-10 flex items-center justify-center gap-3 group text-center bg-white text-background hover:scale-[1.02] hover:shadow-2xl text-xl"
+            >
+              Get a Quote
+              <ArrowRight size={22} className="group-hover:translate-x-1 transition-transform" />
+            </a>
 
-              <div className="space-y-4 mt-auto">
-                <p className="text-sm font-medium text-white/80 uppercase tracking-wider mb-4">What&apos;s included</p>
+            <div className="space-y-5">
+              <p className="text-sm font-bold text-white/80 uppercase tracking-widest mb-6 border-b border-white/5 pb-4">What&apos;s included in the partnership</p>
+              <div className="grid sm:grid-cols-2 gap-4">
                 {plan.features.map((feature, j) => (
                   <div key={j} className="flex items-start gap-3">
-                    <div className="mt-0.5 rounded-full bg-primary/20 p-1">
-                      <Check size={12} className="text-primary" />
+                    <div className="mt-1 rounded-full bg-primary/20 p-1 shrink-0">
+                      <Check size={14} className="text-primary" />
                     </div>
-                    <span className="text-sm text-white/70">{feature}</span>
+                    <span className="text-white/70 leading-tight">{feature}</span>
                   </div>
                 ))}
               </div>
-            </motion.div>
-          ))}
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>

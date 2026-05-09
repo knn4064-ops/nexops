@@ -23,8 +23,8 @@ const faqs = [
     answer: "Our apps are native for iOS and Android. They integrate seamlessly with your existing platforms like Instagram, TikTok, YouTube, and X."
   },
   {
-    question: "How does revenue sharing work?",
-    answer: "Your app, your revenue. Depending on the plan you choose, we either take 0% revenue share or a small percentage based on performance. We align our success with yours."
+    question: "How does the partnership model work?",
+    answer: "Your app, your brand. Model saradnje dogovaramo individualno na osnovu tvojih ciljeva i potencijala za rast. Naš cilj je da uskladimo naš uspeh sa tvojim."
   },
   {
     question: "What kind of app will I get?",
