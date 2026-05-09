@@ -68,13 +68,13 @@ export default function Pricing() {
               </div>
             </div>
 
-            <a 
-              href="mailto:andrijana@nexops.agency"
-              className="w-full py-5 rounded-full font-bold transition-all duration-300 mb-10 flex items-center justify-center gap-3 group text-center bg-white text-background hover:scale-[1.02] hover:shadow-2xl text-xl"
-            >
-              Get a Quote
-              <ArrowRight size={22} className="group-hover:translate-x-1 transition-transform" />
-            </a>
+              <a 
+                href="mailto:andrijana@nexops.agency"
+                className="w-full py-5 rounded-full font-bold transition-all duration-300 mb-10 flex items-center justify-center gap-3 group text-center bg-white text-background hover:scale-[1.02] hover:shadow-2xl text-xl"
+              >
+                Start Your App
+                <ArrowRight size={22} className="group-hover:translate-x-1 transition-transform" />
+              </a>
 
             <div className="space-y-5">
               <p className="text-sm font-bold text-white/80 uppercase tracking-widest mb-6 border-b border-white/5 pb-4">What&apos;s included in the partnership</p>

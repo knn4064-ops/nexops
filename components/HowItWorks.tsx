@@ -1,14 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { PhoneCall, Code2, Rocket } from "lucide-react";
+import { Mail, Code2, Rocket } from "lucide-react";
 
 const steps = [
   {
-    icon: <PhoneCall size={28} />,
-    title: "Strategy Call",
-    description: "A free 30-minute discovery call to map out your custom app strategy and revenue potential.",
-    tag: "Free & No Commitment"
+    icon: <Mail size={28} />,
+    title: "Email Outreach",
+    description: "Send us an email to map out your custom app strategy and revenue potential.",
+    tag: "Get a custom plan"
   },
   {
     icon: <Code2 size={28} />,

@@ -54,11 +54,11 @@ export default function Navbar() {
 
         {/* Desktop CTA */}
         <div className="hidden md:block">
-          <Link href="#contact" className="group relative inline-flex items-center justify-center px-6 py-2.5 font-medium text-white transition-all duration-200 bg-primary/20 border border-primary/50 rounded-full hover:bg-primary/40 hover:scale-105 hover:shadow-[0_0_20px_rgba(124,58,237,0.3)]">
+          <a href="mailto:andrijana@nexops.agency" className="group relative inline-flex items-center justify-center px-6 py-2.5 font-medium text-white transition-all duration-200 bg-primary/20 border border-primary/50 rounded-full hover:bg-primary/40 hover:scale-105 hover:shadow-[0_0_20px_rgba(124,58,237,0.3)]">
             <span className="relative z-10 flex items-center gap-2">
               Start Your App <span className="group-hover:translate-x-1 transition-transform">→</span>
             </span>
-          </Link>
+          </a>
         </div>
 
         {/* Mobile Toggle */}
@@ -89,13 +89,13 @@ export default function Navbar() {
                   {link.name}
                 </Link>
               ))}
-              <Link 
-                href="#contact" 
+              <a 
+                href="mailto:andrijana@nexops.agency" 
                 onClick={() => setIsOpen(false)}
                 className="mt-4 flex items-center justify-center w-full px-6 py-3 font-medium text-white bg-gradient-to-r from-primary to-pink rounded-full"
               >
                 Start Your App →
-              </Link>
+              </a>
             </motion.div>
           )}
         </AnimatePresence>
