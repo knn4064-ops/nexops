@@ -1,10 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Play, ChevronDown } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { InstagramIcon, YoutubeIcon } from "./icons";
 import { useEffect, useState } from "react";
-import Link from "next/link";
 
 const words = "Turn Your Audience Into a Revenue Machine".split(" ");
 
@@ -72,26 +71,6 @@ export default function Hero() {
             You grow your brand — we handle the tech and the money.
           </motion.p>
 
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 1 }}
-            className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mb-16"
-          >
-            <a href="mailto:andrijana@nexops.agency" className="group relative inline-flex items-center justify-center px-8 py-4 font-medium text-white transition-all duration-200 bg-white text-background rounded-full hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)]">
-              <span className="font-bold text-lg flex items-center gap-2">
-                Start Your App
-                <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-              </span>
-            </a>
-            
-            <Link href="#how-it-works" className="inline-flex items-center justify-center px-8 py-4 font-medium text-white transition-all duration-200 glass-card rounded-full hover:bg-white/10 hover:scale-105">
-              <span className="flex items-center gap-2">
-                <Play size={20} className="fill-white" />
-                See How It Works
-              </span>
-            </Link>
-          </motion.div>
 
           {/* Social Proof Row */}
           <motion.div 
