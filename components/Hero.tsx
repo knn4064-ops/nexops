@@ -78,12 +78,12 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 1 }}
             className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mb-16"
           >
-            <Link href="#contact" className="group relative inline-flex items-center justify-center px-8 py-4 font-medium text-white transition-all duration-200 bg-white text-background rounded-full hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)]">
+            <a href="mailto:andrijana@nexops.agency" className="group relative inline-flex items-center justify-center px-8 py-4 font-medium text-white transition-all duration-200 bg-white text-background rounded-full hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)]">
               <span className="font-bold text-lg flex items-center gap-2">
-                Get My Free App Strategy
+                Start Your App
                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
               </span>
-            </Link>
+            </a>
             
             <Link href="#how-it-works" className="inline-flex items-center justify-center px-8 py-4 font-medium text-white transition-all duration-200 glass-card rounded-full hover:bg-white/10 hover:scale-105">
               <span className="flex items-center gap-2">

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Calendar } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export default function FinalCTA() {
   return (
@@ -50,17 +50,16 @@ export default function FinalCTA() {
               transition={{ delay: 0.2 }}
               className="flex flex-col items-center gap-6"
             >
-              <button className="group relative inline-flex items-center justify-center px-10 py-5 font-bold text-lg text-white transition-all duration-300 bg-white text-background rounded-full hover:scale-105 hover:shadow-[0_0_40px_rgba(255,255,255,0.4)]">
+              <a href="mailto:andrijana@nexops.agency" className="group relative inline-flex items-center justify-center px-10 py-5 font-bold text-lg text-white transition-all duration-300 bg-white text-background rounded-full hover:scale-105 hover:shadow-[0_0_40px_rgba(255,255,255,0.4)]">
                 <span className="flex items-center gap-2">
-                  <Calendar size={20} />
-                  Book Your Free Strategy Call
+                  Start Your App
                   <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                 </span>
-              </button>
+              </a>
               
               <div className="flex items-center gap-2 text-sm font-medium text-white/50 bg-background/50 backdrop-blur-md px-4 py-2 rounded-full border border-white/5">
                 <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-                No commitment. No credit card. Just a 30-min call.
+                No commitment. No credit card. Get a custom strategy via email.
               </div>
             </motion.div>
           </div>

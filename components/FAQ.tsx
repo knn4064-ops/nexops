@@ -31,12 +31,12 @@ const faqs = [
     answer: "It depends on your niche! Fitness creators get workout and diet tracking apps. Food creators get recipe and meal planning apps. Educators get course and community apps. It's fully custom."
   },
   {
-    question: "Is there a free trial?",
-    answer: "We offer a free 30-minute strategy call to map out exactly what your app would look like and its revenue potential. There's no commitment required."
+    question: "Do you offer a strategy session?",
+    answer: "Yes. Send us an email and we'll map out exactly what your app would look like and its revenue potential. No commitment required."
   },
   {
     question: "How do I get started?",
-    answer: "Simply book a free strategy call using the button below. We'll discuss your brand, your audience, and show you exactly how we can turn them into a predictable revenue stream."
+    answer: "Simply send an email to andrijana@nexops.agency. We'll discuss your brand, your audience, and show you exactly how we can turn them into a predictable revenue stream."
   }
 ];
 
