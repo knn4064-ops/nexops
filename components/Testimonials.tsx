@@ -19,7 +19,7 @@ const testimonials = [
     niche: "Food & Recipes",
     followers: "85k",
     platform: <YoutubeIcon size={16} />,
-    quote: "I had no idea how to build an app. They took my vision and made it reality in 4 weeks. My community loves it and the revenue is over $12k monthly now."
+    quote: "I had no idea how to build an app. They took my vision and made it reality in 2 weeks. My community loves it and the revenue is over $12k monthly now."
   },
   {
     name: "Tech Reviewer",

@@ -8,10 +8,10 @@ const syne = Syne({ subsets: ["latin"], variable: '--font-syne' });
 
 export const metadata: Metadata = {
   title: "nexops.agency — Turn Your Audience Into Revenue",
-  description: "We build and monetize custom apps for micro-influencers on Instagram, TikTok & YouTube. From idea to income in 6 weeks.",
+  description: "We build and monetize custom apps for micro-influencers on Instagram, TikTok & YouTube. From idea to income in 2 weeks.",
   openGraph: {
     title: "nexops.agency — Turn Your Audience Into Revenue",
-    description: "We build and monetize custom apps for micro-influencers on Instagram, TikTok & YouTube. From idea to income in 6 weeks.",
+    description: "We build and monetize custom apps for micro-influencers on Instagram, TikTok & YouTube. From idea to income in 2 weeks.",
     url: "https://nexops.agency",
     siteName: "nexops.agency",
     images: [

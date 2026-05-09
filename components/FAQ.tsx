@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     question: "How long to build my app?",
-    answer: "Typically 4–6 weeks from our kickoff call to your app being live on the iOS App Store and Google Play Store. Complex custom features may take slightly longer."
+    answer: "Typically under 2 weeks from our kickoff call to your app being live on the iOS App Store and Google Play Store. We move fast so you can start earning immediately."
   },
   {
     question: "What if I'm under 10k followers?",

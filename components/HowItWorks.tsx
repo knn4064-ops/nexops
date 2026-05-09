@@ -14,7 +14,7 @@ const steps = [
     icon: <Code2 size={28} />,
     title: "We Build Your App",
     description: "Our team designs and develops a fully branded, premium app for iOS and Android.",
-    tag: "4-6 Weeks"
+    tag: "Under 2 Weeks"
   },
   {
     icon: <Rocket size={28} />,

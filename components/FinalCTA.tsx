@@ -30,7 +30,7 @@ export default function FinalCTA() {
               className="text-4xl md:text-5xl lg:text-7xl font-display font-extrabold mb-6 tracking-tight"
             >
               Your App Could Be Live <br/>
-              <span className="text-gradient">in 4 Weeks</span>
+              <span className="text-gradient">in 2 Weeks</span>
             </motion.h2>
 
             <motion.p 
